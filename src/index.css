@@ -1,0 +1,48 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --animation-duration: 7s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  background-color: #a03333;
+  color: white;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  width: 12px;
+}
+
+body::-webkit-scrollbar-track {
+  background: #2f1212;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(112, 34, 34);
+  border-radius: 20px;
+}
+
+@keyframes scrollText {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+.scrolling-text {
+  @layer whitespace-nowrap relative animation-scrollText;
+}
