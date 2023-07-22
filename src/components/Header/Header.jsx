@@ -8,15 +8,15 @@ const Header = () => {
 
   return (
     <header
-      class="w-screen h-[90px] flex items-center justify-between px-paddingX absolute z-50"
+      class="w-screen h-[90px] flex items-center xl:justify-between lg:justify-between md:justify-center px-paddingX absolute z-50"
       data-aos="fade-down"
       data-aos-duration="1000"
     >
       {/* Logo */}
-      <a href="#">
+      <a href="#" class="xl:block lg:block md:hidden">
         <img src={Logo} alt="Logo Robust Habit" />
       </a>
-      <nav className="font-bebas font-normal text-2xl text-white space-x-[30px] flex items-center">
+      <nav className="font-bebas font-normal xl:text-2xl lg:text-2xl md:text-lg text-white space-x-[30px] flex items-center">
         <a href="#" class="duration-[.4s] hover:opacity-80">
           Sobre
         </a>

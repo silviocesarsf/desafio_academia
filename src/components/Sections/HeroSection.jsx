@@ -15,9 +15,9 @@ const HeroSection = () => {
       <SectionComponent>
         {/* Text Hero */}
         <div class="h-screen w-full px-paddingX flex items-center justify-between">
-          <div class="flex flex-col items-start justify-between max-w-[55%] leading-[80px] gap-5">
+          <div class="flex flex-col xl:items-start md:items-center justify-between leading-[80px] gap-5">
             <h1
-              class="uppercase font-normal text-[82px] font-bungee"
+              class="uppercase font-normal text-[82px] font-bungee text-center"
               data-aos="fade-down"
               data-aos-duration="1000"
               data-aos-delay="700"
@@ -33,7 +33,7 @@ const HeroSection = () => {
               Treina fofo
             </h1>
             <p
-              class="font-normal text-lg text-white"
+              class="font-normal text-lg text-white xl:text-left md:text-center"
               data-aos="fade-down"
               data-aos-duration="1000"
               data-aos-delay="900"
@@ -53,12 +53,12 @@ const HeroSection = () => {
               </ShapeButton>
             </div>
           </div>
-          <div class="h-screen w-full ">
+          <div class="h-screen w-full xl:block lg:block md:hidden">
             {/* Right Hero */}
             <img
               src={heroAcademia}
               alt="Homem se exercitando"
-              class="absolute z-40 right-14 bottom-0 h-[695px]"
+              class="absolute z-40 right-14 bottom-0 xl:min-h-[695px] lg:h-[550px]"
               data-aos="fade-up"
               data-aos-duration="1000"
               data-aos-delay="1000"
@@ -67,7 +67,7 @@ const HeroSection = () => {
             <img
               src={redOverlay}
               alt="Overlay vermelho"
-              class="absolute z-30 top-0 right-[0%] h-[100%]"
+              class="absolute z-30 top-0 right-[-20%] xl:h-[100%] lg:h-[100%]"
               data-aos="fade-left"
               data-aos-duration="800"
               data-aos-delay="500"

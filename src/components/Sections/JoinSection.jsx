@@ -9,13 +9,13 @@ const JoinSection = () => {
 
   return (
     <SectionComponent>
-      <div class="w-full h-full flex items-center justify-between px-paddingX">
+      <div class="max-w-screen h-full flex items-center justify-between px-paddingX">
         {/* Hero */}
-        <div class="w-full h-full relative">
+        <div class="w-full h-full relative xl:block lg:hidden">
           <img
             src={Overlay}
             alt="Shape vermelho"
-            class="absolute left-[-30%] top-0 transform -scale-x-100 h-[110%] z-30"
+            class="absolute left-[-40%] top-0 -scale-x-100 h-[110%] z-30"
           />
           <img
             src={Casal}
@@ -27,7 +27,7 @@ const JoinSection = () => {
           />
         </div>
         {/* Right */}
-        <div class="flex flex-col items-center justify-center gap-[70px] xl:w-full lg:max-w-[40%]">
+        <div class="flex flex-col items-center justify-center gap-[70px]">
           {/* Text */}
           <div data-aos="fade-down" data-aos-duration="400">
             <h1 class="w-full font-bungee text-[62px] whitespace-nowrap">
@@ -40,38 +40,38 @@ const JoinSection = () => {
             </p>
           </div>
           {/* Quantities container */}
-          <div class="w-full flex items-center justify-between gap-[50px]">
+          <div class="w-full flex xl:flex-row items-center justify-between gap-[50px]">
             {/* Quantities content */}
             <div
               class="flex flex-col items-center justify-center w-[218px]"
-              data-aos="fade-down"
+              // data-aos="fade-down"
               data-aos-duration="400"
               data-aos-delay="400"
             >
               <h1 class="font-bebas text-[62px] leading-normal">+15</h1>
-              <p class="text-[18px] leading-normal text-start">
+              <p class="text-[18px] leading-normal xl:text-start lg:text-center">
                 Unidades na cidade de São Paulo.
               </p>
             </div>
             <div
               class="flex flex-col items-center justify-center w-[218px]"
-              data-aos="fade-down"
+              // data-aos="fade-down"
               data-aos-duration="400"
               data-aos-delay="500"
             >
               <h1 class="font-bebas text-[62px] leading-normal">+2000</h1>
-              <p class="text-[18px] text-start">
+              <p class="text-[18px] xl:text-start lg:text-center">
                 Alunos matriculados em nossas unidades.
               </p>
             </div>
             <div
               class="flex flex-col items-center justify-center w-[218px]"
-              data-aos="fade-down"
+              // data-aos="fade-down"
               data-aos-duration="400"
               data-aos-delay="600"
             >
               <h1 class="font-bebas text-[62px] leading-normal">+100</h1>
-              <p class="text-[18px] text-start">
+              <p class="text-[18px] xl:text-start lg:text-center">
                 Professores altamente qualificados.
               </p>
             </div>

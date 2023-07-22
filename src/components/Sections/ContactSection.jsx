@@ -54,7 +54,7 @@ const ContactSection = () => {
           <img
             src={Mulher}
             alt="Mulher carregando anilhas"
-            class="h-[617px] w-[440px]"
+            class="h-[617px] w-[440px] xl:block lg:block md:hidden"
           />
         </div>
       </div>

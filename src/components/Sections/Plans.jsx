@@ -36,16 +36,16 @@ const Plans = () => {
   Aos.init();
 
   return (
-    <section class="xl:h-[700px] lg:min-h-screen max-w-full flex flex-col items-center justify-center bg-[#222222] px-paddingX xl:gap-[60px] lg:40px">
+    <section class="xl:h-[657px] lg:h-[1300px] md:h-[1000px] max-w-full flex flex-col items-center xl:justify-center lg:justify-around bg-[#222222] px-paddingX xl:gap-[60px] lg:gap-[20px] md-gap-[10px]">
       {/* Title */}
       <h1
-        class="uppercase font-bebas xl:text-[82px] lg:text-[52px] font-normal"
+        class="uppercase font-bebas xl:text-[82px] lg:text-[52px] md:text-[42px] font-normal"
         data-aos="fade-down"
       >
         Nossos planos
       </h1>
       {/* Plans */}
-      <div class="flex items-center justify-center w-full gap-[41px] lg:whitespace-normal">
+      <div class="flex xl:flex-row items-center justify-center w-full xl:gap-[41px] lg:gap-[41px] md:gap-[41px] lg:flex-col md:flex-col">
         {plansObj.map((plan) => (
           <CardPlan plan={plan} key={plan.id} />
         ))}

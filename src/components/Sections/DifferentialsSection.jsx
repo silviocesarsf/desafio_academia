@@ -67,11 +67,15 @@ const DifferentialsSection = () => {
           data-aos="fade-down"
           data-aos-duration="500"
         >
-          <h1 class="font-bungee xl:text-[62px] lg:text-[52px]">Nossos</h1>
-          <h1 class="font-bebas xl:text-[82px] lg:text-[72px]">Diferenciais</h1>
+          <h1 class="font-bungee xl:text-[62px] lg:text-[52px] md:text-[42px]">
+            Nossos
+          </h1>
+          <h1 class="font-bebas xl:text-[82px] lg:text-[72px] md:text-[62px]">
+            Diferenciais
+          </h1>
         </div>
         {/* Cards differencials */}
-        <div class="w-full xl:flex xl:flex-row items-center xl:justify-center lg:grid lg:grid-cols-2 lg:gap-4 lg:place-content-between">
+        <div class="w-full xl:flex xl:flex-row items-center xl:justify-center lg:grid lg:grid-cols-2 lg:gap-4 lg:place-content-between md:grid md:grid-cols-2 md:gap-4 md:place-content-between">
           {differencialsObj.map((data) => (
             <Card
               isHoveredFunction={() => handleDifferentialHover(data.id)}
@@ -80,22 +84,30 @@ const DifferentialsSection = () => {
             >
               {/* Icon card */}
               <i>
-                <img src={data.icon} alt={data.title} />
+                <img
+                  src={data.icon}
+                  alt={data.title}
+                  class="xl:h-full lg:h-[80%] md:h-[60%]"
+                />
               </i>
               {/* Title card */}
-              <h1 class="uppercase font-bebas text-[28px] font-normal">
+              <h1 class="uppercase font-bebas xl:text-[28px] lg:text-[20px] md:text-[20px] font-normal">
                 {data.title}
               </h1>
               {/* Paragraph card */}
-              <p class="text-lg font-normal leading-[normal] w-[273px] pb-4">
+              <p class="xl:text-lg lg:text-sm md:text-xs xl:max-w-[100%] md:max-w-[90%] font-normal leading-[normal] w-[273px] pb-4">
                 {data.paragraph}
               </p>
               <ShapeButton active={hoveredId === data.id && true}>
                 <span class="w-[187px] p-[15px] text-white font-400 uppercase flex items-center justify-between">
-                  <p class="text-left text-base leading-[normal] w-full max-w-[100px]">
+                  <p class="text-start xl:p-0 lg:pl-1 md:pl-2 xl:text-[18px] lg:text-[15px] leading-[normal] w-full max-w-[100px]">
                     {data.buttonText}
                   </p>
-                  <img src={Arrow} alt="Flecha" class="mr-4" />
+                  <img
+                    src={Arrow}
+                    alt="Flecha"
+                    class="mr-4 xl:scale-100 lg:scale-75 md:scale-50"
+                  />
                 </span>
               </ShapeButton>
             </Card>

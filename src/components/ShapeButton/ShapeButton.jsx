@@ -3,7 +3,7 @@ import React from "react";
 const ShapeButton = ({ children, active }) => {
   return (
     <button
-      class="text-white relative flex items-center justify-center transition-all
+      class="text-white relative flex items-center justify-center xl:max-w-[100%] lg:max-w-[60%] md:max-w-[60%] transition-all
       hover:translate-y-[5%] hover:shadow-md hover:brightness-75"
     >
       <p

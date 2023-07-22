@@ -10,15 +10,31 @@ const Stripe = () => {
     overflow-hidden shrink-0 absolute bottom-0 z-40 font-bebas text-[32px]"
       >
         {/* Stripe content */}
-        <div class="max-w-full h-full bottom-0 z-40 font-bebas xl:text-[32px] flex items-center justify-between px-5 lg:text-[15px]">
+        <div class="max-w-full h-full bottom-0 z-40 font-bebas xl:text-[32px] flex items-center justify-between px-5 lg:text-[20px] md:text-[17px]">
           <p>Consultoria individual</p>
-          <img class="" src={Anilha} alt="Icone anilha" />
+          <img
+            class="xl:h-full lg:h-[30px] md:h-[20px]"
+            src={Anilha}
+            alt="Icone anilha"
+          />
           <p>+20 Professores</p>
-          <img class="" src={Anilha} alt="Icone anilha" />
+          <img
+            class="xl:h-full lg:h-[30px] md:h-[20px]"
+            src={Anilha}
+            alt="Icone anilha"
+          />
           <p>Treine da sua forma</p>
-          <img class="" src={Anilha} alt="Icone anilha" />
+          <img
+            class="xl:h-full lg:h-[30px] md:h-[20px]"
+            src={Anilha}
+            alt="Icone anilha"
+          />
           <p>+15 Unidades</p>
-          <img class="" src={Anilha} alt="Icone anilha" />
+          <img
+            class="xl:h-full lg:h-[30px] md:h-[20px]"
+            src={Anilha}
+            alt="Icone anilha"
+          />
           <p>Montamos seu treino</p>
         </div>
       </div>
