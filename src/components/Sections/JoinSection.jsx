@@ -44,7 +44,7 @@ const JoinSection = () => {
             {/* Quantities content */}
             <div
               class="flex flex-col items-center justify-center w-[218px]"
-              // data-aos="fade-down"
+              data-aos="fade-down"
               data-aos-duration="400"
               data-aos-delay="400"
             >
@@ -55,7 +55,7 @@ const JoinSection = () => {
             </div>
             <div
               class="flex flex-col items-center justify-center w-[218px]"
-              // data-aos="fade-down"
+              data-aos="fade-down"
               data-aos-duration="400"
               data-aos-delay="500"
             >
@@ -66,7 +66,7 @@ const JoinSection = () => {
             </div>
             <div
               class="flex flex-col items-center justify-center w-[218px]"
-              // data-aos="fade-down"
+              data-aos="fade-down"
               data-aos-duration="400"
               data-aos-delay="600"
             >
